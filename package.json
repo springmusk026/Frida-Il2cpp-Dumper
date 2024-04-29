@@ -1,0 +1,28 @@
+{
+  "name": "il2cpp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "spawn": "frida -U -f com.dts.freefireth -l dist/agent.js",
+    "build": "frida-compile src/index.ts -o dist/agent.js -c",
+    "watch": "frida-compile src/index.ts -o dist/agent.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/frida-gum": "^18.5.1",
+    "@types/node": "~20.9",
+    "frida-compile": "^16.4.1",
+    "frida-il2cpp-bridge": "^0.9.0",
+    "typescript": "^5.3.3"
+  },
+  "description": "",
+  "dependencies": {
+    "clipboard-copy": "^4.0.1",
+    "clipboardy": "^4.0.0",
+    "copy-text-to-clipboard": "^3.2.0",
+    "open": "^10.0.3",
+    "require": "^2.4.20"
+  }
+}
